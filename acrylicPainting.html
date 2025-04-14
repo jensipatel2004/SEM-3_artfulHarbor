@@ -1,0 +1,450 @@
+<!--https://img.freepik.com/premium-photo/illustration-painting-colorful-autumn-summer-season-nature-background-abstract-art-image-forest_933530-5417.jpg;-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            .container{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            .card{
+                width: 300px;
+                height: 460px;
+                margin: 25px;
+                background-color: #fff;
+                border-radius: 20px;
+                overflow: hidden; /* contain rectangle box ni outside na jay */
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+                transition: 0.3s;
+            }
+            .card-header{
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+            }
+            .card-img{
+                min-width: 100%;
+                width: auto;
+                height: 100%;
+            }
+            .card-body{
+                height: 170px;
+                padding: 15px;
+                text-align: center;
+                font-family: sans-serif;
+            }
+            .card-local{
+                font-size: 18px;
+                margin: 10px 0;
+            }
+            .card-titulo{
+                font-size: 32px;
+                margin: 20px 0;
+            }
+            .card-texto{
+                font-size: 20px;
+                margin: 30px auto;
+                width: 250px;
+            }
+            .card-footer a{
+                color: #fff;
+                display: block;
+                padding: 16px;
+                text-decoration: none;
+                font-family: sans-serif;
+                font-weight: 600;
+                text-align: center;
+            }
+            .card-1 .card-footer{
+                background-color: #f8b975;
+            }
+            .card-1 .card-local{
+                color: #f8b975;
+            }
+            .card-2 .card-footer{
+                background-color: #78a083;
+            }
+            .card-2 .card-local{
+                color: #78a083;
+            }
+            .card-3 .card-footer{
+                background-color: #a87c7c;
+            }
+            .card-3 .card-local{
+                color: #a87c7c;
+            }
+            .card-4 .card-footer{
+                background-color: #365486;
+            }
+            .card-4 .card-local{
+                color: #314e81;
+            }
+            .card-5 .card-footer{
+                background-color: #7fc7d9;
+            }
+            .card-5 .card-local{
+                color: #7fc7d9;
+            }
+            .card-6 .card-footer{
+                background-color: #c499f3;
+            }
+            .card-6 .card-local{
+                color: #c499f3;
+            }
+            .card-7 .card-footer{
+                background-color: #934e93;
+            }
+            .card-7 .card-local{
+                color: #934e93;
+            }
+            .card-8 .card-footer{
+                background-color: #265073;
+            }
+            .card-8 .card-local{
+                color: #265073;
+            }
+            .card-9 .card-footer{
+                background-color: #8cc19b;
+            }
+            .card-9 .card-local{
+                color: #8cc19b;
+            }
+            .card-10 .card-footer{
+                background-color: #5c8374;
+            }
+            .card-10 .card-local{
+                color: #5c8374;
+            }
+            .card-11 .card-footer{
+                background-color: #85586f;
+            }
+            .card-11 .card-local{
+                color: #85586f;
+            }
+            .card-12 .card-footer{
+                background-color: #3aa6b9;
+            }
+            .card-12 .card-local{
+                color: #3aa6b9;
+            }
+            .card:hover{
+                transform: scale3d(1.1,1.1,1); /*(width,height)*/
+            }
+            #v1{
+                color: black; font-size: 70px; position: absolute; top: 25%; left: 50%; transform: translate(-50%,-50%); /*(left,up), positive=(right,down))*/
+            }
+            #v2{
+                color: black; font-size: 70px; position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%); 
+            }
+            #abc1{
+    border-radius: 50%; 
+    height: 40px; 
+    width: 40px; 
+    margin-right: 15px; 
+    margin-top: 3px;
+}
+#abc2{
+    color: rgb(123, 54, 54); 
+    font-family: chiller; 
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-right: 39%;
+}
+
+            @media screen and (min-width: 768px) and (max-width: 1024px){
+                #v1{
+                color: black; font-size: 60px; position: absolute; top: 25%; left: 50%; transform: translate(-50%,-50%);
+            }
+            #v2{
+                color: rgb(3, 3, 3); font-size: 60px; position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%); 
+            }
+            #abc1{
+    border-radius: 50%; 
+    height: 28px; 
+    width: 28px; 
+    margin-right: 15px; 
+    margin-top: 3px;
+}
+#abc2{
+    color: rgb(123, 54, 54); 
+    font-family: chiller; 
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-right: 15%;
+}
+            }
+
+            @media screen and (max-width: 767px){
+                #v1{
+                color: black; font-size: 50px; position: absolute; top: 25%; left: 50%; transform: translate(-50%,-50%);
+            }
+            #v2{
+                color: rgb(3, 3, 3); font-size: 50px; position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%); 
+            }
+            #abc1{
+    border-radius: 50%; 
+    height: 15px; 
+    width: 15px; 
+    margin-right: 15px; 
+    margin-top: 6px;
+}
+#abc2{
+    color: rgb(123, 54, 54); 
+    font-family: chiller; 
+    font-size: 15px; 
+    font-weight: bold; 
+    margin-right: 12%;
+    margin-top: 4px;
+}
+#q1{
+    font-size: 10px;
+}
+#q2{
+    font-size: 10px;
+}
+#q3{
+    font-size: 10px;
+}
+#q4{
+    font-size: 10px;
+}
+#q5{
+    font-size: 10px;
+}
+#q6{
+    font-size: 10px;
+}
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav justify-content-center" style="background-color: rgb(209, 153, 153); "> 
+            <img src="image/4.jpg" id="abc1" >
+            <p id="abc2" >Artful Harbor</p>
+            <li class="nav-item "> 
+                <a id="q1" class="nav-link "   href="art_FSD.html" style="color: rgb(159, 9, 9); font-weight: bold;">Home</a> 
+            </li> 
+            <li class="nav-item "> 
+                <a id="q2" class="nav-link "   href="artist.html" style="color: rgb(186, 41, 41); font-weight: bold;">Artist</a> 
+            </li> 
+            <li class="nav-item "> 
+                <a id="q3" class="nav-link "   href="artwork.html" style="color: rgb(111, 33, 33); font-weight: bold;">Artworks</a> 
+            </li> 
+            <li class="nav-item  dropdown "> 
+                <a id="q4" class="nav-link  active dropdown-toggle "  data-bs-toggle="dropdown"  href="#sell" style="color: rgba(198, 62, 62, 0.822); font-weight: bold;">Sell</a> 
+                <ul class="dropdown-menu"> 
+                    <li>
+                        <a class=" dropdown-item"  href="acrylicPainting.html">acrylic painting</a>
+                    </li> 
+                    <li >
+                        <a class=" dropdown-item"   href="mandalaArt.html">mandala art</a>
+                    </li> 
+                    <li>
+                        <a class=" dropdown-item"  href="tavdiPainting.html">tavdi painting</a>
+                    </li> 
+                    <li>
+                        <a class=" dropdown-item"  href="abstractPainting.html">abstract painting</a>
+                    </li> 
+                </ul>
+            </li> 
+            <li class="nav-item  dropdown justify-content-end"> 
+                <a id="q5" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown"  href="#Events" style="color: #a94249; font-weight: bold;">Events</a> 
+                <ul class="dropdown-menu"> 
+                    <li>
+                        <a class="dropdown-item"  href="pastEvent.html">past</a>
+                    </li> 
+                    <li>
+                        <a class="dropdown-item"  href="currentEvent.html">current</a>
+                    </li> 
+                    <li>
+                        <a class="dropdown-item"  href="upcomingEvent.html">upcoming</a>
+                    </li> 
+                </ul>
+            </li> 
+            <li class="nav-item justify-content-end"> 
+                <a id="q6" class="nav-link active"  href="contact.html" style="color: rgb(111, 55, 55); font-weight: bold;">Contact</a> 
+            </li> 
+        </ul>
+        <br>
+        <div class="container-fluid" style="height: 80%; width: 100%; position: relative;">
+        <img src="image/42.avif" style="height: 80%; width: 100%; border: 5px solid black;">
+        <h1 id="v1" > Acrylic </h1>
+        <h1 id="v2" >  Painting </h1>
+    </div>
+    <div class="container">
+        <div class="card card-1">
+            <div class="card-header">
+                <img src="image/43.jpg" class="card-img" />
+            </div>
+            <div class="card-body">
+                <h2 class="card-local">Acrylic Painting</h2>
+                <h1 class="card-titulo">Dandelion Flower</h1>
+                <p class="card-texto">₹75,000</p>
+            </div>
+            <div class="card-footer">
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+        <div class="card card-2">
+            <div class="card-header">
+                <img src="image/44.jpg" class="card-img" />
+            </div>
+            <div class="card-body">
+                <h2 class="card-local">Acrylic Painting</h2>
+                <h1 class="card-titulo">Nature</h1>
+                <p class="card-texto">₹1,00,000</p>
+            </div>
+            <div class="card-footer">
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+        <div class="card card-3">
+            <div class="card-header">
+                <img src="image/45.jpg" class="card-img" />
+            </div>
+            <div class="card-body">
+                <h2 class="card-local">Acrylic Painting</h2>
+                <h1 class="card-titulo">Lake </h1>
+                <p class="card-texto">₹40,000</p>
+            </div>
+            <div class="card-footer">
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+        </div>
+    
+        <div class="container">
+            <div class="card card-4">
+                <div class="card-header">
+                    <img src="image/46.jpg" class="card-img" />
+                </div>
+                <div class="card-body">
+                    <h2 class="card-local">Acrylic Painting</h2>
+                    <h1 class="card-titulo">Bird</h1>
+                    <p class="card-texto">₹8,00,000</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="card card-5">
+                <div class="card-header">
+                    <img src="image/47.jpg" class="card-img" />
+                </div>
+                <div class="card-body">
+                    <h2 class="card-local">Acrylic Painting</h2>
+                    <h1 class="card-titulo">Horse</h1>
+                    <p class="card-texto">₹6,00,000</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="card card-6">
+                <div class="card-header">
+                    <img src="image/48.jpg" class="card-img" />
+                </div>
+                <div class="card-body">
+                    <h2 class="card-local">Acrylic Painting</h2>
+                    <h1 class="card-titulo">Butterfly</h1>
+                    <p class="card-texto">₹15,89,600</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            </div>
+    
+            <div class="container">
+                <div class="card card-7">
+                    <div class="card-header">
+                        <img src="image/49.jpg" class="card-img" />
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-local">Acrylic Painting</h2>
+                        <h1 class="card-titulo">Lion</h1>
+                        <p class="card-texto">₹59,469</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card card-8">
+                    <div class="card-header">
+                        <img src="image/50.jpg" class="card-img" />
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-local">Acrylic Painting</h2>
+                        <h1 class="card-titulo">Streets</h1>
+                        <p class="card-texto">₹16,00,890</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card card-9">
+                    <div class="card-header">
+                        <img src="image/51.jpg" class="card-img" />
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-local">Acrylic Painting</h2>
+                        <h1 class="card-titulo">Rain</h1>
+                        <p class="card-texto">₹12,00,000</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="container">
+                    <div class="card card-10">
+                        <div class="card-header">
+                            <img src="image/52.jpg" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-local">Acrylic Painting</h2>
+                            <h1 class="card-titulo">Lord Shiva</h1>
+                            <p class="card-texto">₹34,708</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card card-11">
+                        <div class="card-header">
+                            <img src="image/53.avif" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-local">Acrylic Painting</h2>
+                            <h1 class="card-titulo">Lord Ganesha</h1>
+                            <p class="card-texto">₹1,89,000</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card card-12">
+                        <div class="card-header">
+                            <img src="image/54.jpg" class="card-img" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-local">Acrylic Painting</h2>
+                            <h1 class="card-titulo">Fish</h1>
+                            <p class="card-texto">₹67,000</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                    </div>
+    </body>
+</html>
+    

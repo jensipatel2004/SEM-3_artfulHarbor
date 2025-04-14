@@ -1,0 +1,373 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            #v1{
+                color: rgb(6, 0, 0); font-size: 55px; position: absolute; top: 20%; left: 17%; transform: translate(-50%,-50%);
+            }
+            #v2{
+                font-size: 20px; position: absolute; top: 37%; left: 23%; transform: translate(-50%,-50%); color: #63a6f8;
+            }
+            #v3{
+                font-size: 20px; position: absolute; top: 42%; left: 17%; transform: translate(-50%,-50%); color: #4290f0;
+            }
+            .container-fluid{
+                height: 65%; width: 100%; position: relative;
+            }
+            #d1{
+                background-color: #175656; height: 65%; width: 100%; float: left;
+            }
+            #d2{
+                color: #89c9a7; margin-left: 20px;
+            }
+            #d3{
+                color: #5dc494;
+            }
+            #d4{
+                color: #5dc494;
+            }
+            #d5{
+                color: #5dc494;
+            }
+            #d6{
+                color: #89c9a7;  margin-left: 60px;font-size: 25px;
+            }
+            #d7{
+                color: #5dc494; margin-left: 70px;
+            }
+            #d8{
+                color: #5dc494; margin-left: 70px;
+}
+#d9{
+    color: #5dc494; margin-left: 70px;
+}
+#d10{
+    color: #5dc494; margin-left: 70px;
+}
+#d11{
+    color: #89c9a7; font-size: 25px; margin-left: 5px; 
+}
+#d12{
+    color: #5dc494; margin-left: 10px;
+}
+#d13{
+    color: #5dc494; margin-left: 10px;
+}
+#d14{
+    color: #5dc494; margin-left: 10px;
+}
+#abc1{
+    border-radius: 50%; 
+    height: 40px; 
+    width: 40px; 
+    margin-right: 15px; 
+    margin-top: 3px;
+}
+#abc2{
+    color: rgb(123, 54, 54); 
+    font-family: chiller; 
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-right: 39%;
+}
+
+            @media screen and (min-width: 768px) and (max-width: 1024px){
+                #v1{
+                color: rgb(6, 0, 0); font-size: 40px; position: absolute; top: 20%; left: 17%; transform: translate(-50%,-50%);
+            }
+            #v2{
+                font-size: 13px; position: absolute; top: 38%; left: 24%; transform: translate(-50%,-50%); color: #63a6f8;
+            }
+            #v3{
+                font-size: 13px; position: absolute; top: 44%; left: 19%; transform: translate(-50%,-50%); color: #4290f0;
+            }
+            .container-fluid{
+                height: 75%; width: 100%; position: relative;
+            }
+            #d1{
+                background-color: #175656; height: 87%; width: 100%; float: left;
+            }
+            #d2{
+                color: #89c9a7; margin-left: 10px; font-size: 30px;
+            }
+            #d3{
+                color: #5dc494; font-size: 13px; 
+            }
+            #d4{
+                color: #5dc494; font-size: 13px; 
+            }
+            #d5{
+                color: #5dc494; font-size: 13px; 
+            }
+            #d6{
+                color: #89c9a7;  margin-left: 30px;font-size: 20px;
+            }
+            #d7{
+                color: #5dc494; font-size: 15px; margin-left: 20px;
+            }
+            #d8{
+                color: #5dc494; font-size: 15px; margin-left: 20px;
+}
+#d9{
+    color: #5dc494; font-size: 15px; margin-left: 20px;
+}
+#d10{
+    color: #5dc494; font-size: 15px; margin-left: 20px;
+}
+#d11{
+    color: #89c9a7; text-indent: 90px;font-size: 20px; margin-left: 20px;
+}
+#d12{
+    color: #5dc494; font-size: 15px; margin-left: 90px;
+}
+#d13{
+    color: #5dc494; font-size: 15px; margin-left: 90px;
+}
+#d14{
+    color: #5dc494; font-size: 15px; margin-left: 90px;
+}
+#abc1{
+    border-radius: 50%; 
+    height: 28px; 
+    width: 28px; 
+    margin-right: 15px; 
+    margin-top: 3px;
+}
+#abc2{
+    color: rgb(123, 54, 54); 
+    font-family: chiller; 
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-right: 15%;
+}
+
+            }
+
+            @media screen and (max-width: 767px){
+                #v1{
+                color: rgb(6, 0, 0); font-size: 30px; position: absolute; top: 20%; left: 20%; transform: translate(-50%,-50%);
+            }
+            #v2{
+                font-size: 9px; position: absolute; top: 37%; left: 23%; transform: translate(-50%,-50%); color: #63a6f8;
+            }
+            #v3{
+                font-size: 10px; position: absolute; top: 42%; left: 18%; transform: translate(-50%,-50%); color: #4290f0;
+            }
+            .container-fluid{
+                height: 70%; width: 100%; position: relative;
+            }
+            #d1{
+                background-color: #175656; height: 82%; width: 100%; float: left;
+            }
+            #d2{
+                color: #89c9a7; margin-left: 8px; font-size: 20px;
+            }
+            #d3{
+                color: #5dc494; font-size: 10px; 
+            }
+            #d4{
+                color: #5dc494; font-size: 10px; 
+            }
+            #d5{
+                color: #5dc494; font-size: 10px; 
+            }
+            #d6{
+                color: #89c9a7;  margin-left: 45px;font-size: 15px;
+            }
+            #d7{
+                color: #5dc494; font-size: 10px; margin-left: 20px;
+            }
+            #d8{
+                color: #5dc494; font-size: 10px; margin-left: 20px;
+}
+#d9{
+    color: #5dc494; font-size: 10px; margin-left: 20px;
+}
+#d10{
+    color: #5dc494; font-size: 10px; margin-left: 20px;
+}
+#d11{
+    color: #89c9a7; text-indent: 60px;font-size: 15px; margin-left: 10px;
+}
+#d12{
+    color: #5dc494; font-size: 10px; margin-left: 50px;
+}
+#d13{
+    color: #5dc494; font-size: 10px; margin-left: 50px;
+}
+#d14{
+    color: #5dc494; font-size: 10px; margin-left: 50px;
+}
+#abc1{
+    border-radius: 50%; 
+    height: 15px; 
+    width: 15px; 
+    margin-right: 15px; 
+    margin-top: 6px;
+}
+#abc2{
+    color: rgb(123, 54, 54); 
+    font-family: chiller; 
+    font-size: 15px; 
+    font-weight: bold; 
+    margin-right: 12%;
+    margin-top: 4px;
+}
+#q1{
+    font-size: 10px;
+}
+#q2{
+    font-size: 10px;
+}
+#q3{
+    font-size: 10px;
+}
+#q4{
+    font-size: 10px;
+}
+#q5{
+    font-size: 10px;
+}
+#q6{
+    font-size: 10px;
+}
+
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav justify-content-center" style="background-color: rgb(209, 153, 153); "> 
+            <img src="image/4.jpg" id="abc1" >
+            <p id="abc2" >Artful Harbor</p>
+            <li class="nav-item "> 
+                <a id="q1" class="nav-link "   href="art_FSD.html" style="color: rgb(159, 9, 9); font-weight: bold;">Home</a> 
+            </li> 
+            <li class="nav-item "> 
+                <a id="q2" class="nav-link "   href="artist.html" style="color: rgb(186, 41, 41); font-weight: bold;">Artist</a> 
+            </li> 
+            <li class="nav-item "> 
+                <a id="q3" class="nav-link "   href="artwork.html" style="color: rgb(111, 33, 33); font-weight: bold;">Artworks</a> 
+            </li> 
+            <li class="nav-item  dropdown "> 
+                <a id="q4" class="nav-link  active dropdown-toggle "  data-bs-toggle="dropdown"  href="#sell" style="color: rgba(198, 62, 62, 0.822); font-weight: bold;">Sell</a> 
+                <ul class="dropdown-menu"> 
+                    <li>
+                        <a class=" dropdown-item"  href="acrylicPainting.html">acrylic painting</a>
+                    </li> 
+                    <li >
+                        <a class=" dropdown-item"   href="mandalaArt.html">mandala art</a>
+                    </li> 
+                    <li>
+                        <a class=" dropdown-item"   href="tavdiPainting.html">tavdi painting</a>
+                    </li> 
+                    <li>
+                        <a class=" dropdown-item"  href="abstractPainting.html">abstract painting</a>
+                    </li> 
+                </ul>
+            </li> 
+            <li class="nav-item  dropdown justify-content-end"> 
+                <a id="q5" class="nav-link active dropdown-toggle"  data-bs-toggle="dropdown"  href="#Events" style="color: #a94249; font-weight: bold;">Events</a> 
+                <ul class="dropdown-menu"> 
+                    <li>
+                        <a class="dropdown-item"  href="pastEvent.html">past</a>
+                    </li> 
+                    <li>
+                        <a class="dropdown-item"  href="currentEvent.html">current</a>
+                    </li> 
+                    <li>
+                        <a class="dropdown-item"  href="upcomingEvent.html">upcoming</a>
+                    </li> 
+                </ul>
+            </li> 
+            <li class="nav-item justify-content-end"> 
+                <a id="q6" class="nav-link active"   href="contact.html" style="color: rgb(111, 55, 55); font-weight: bold;">Contact</a> 
+            </li> 
+        </ul>
+
+        <br>
+        <div class="container-fluid" style="height: 70%; width: 100%; position: relative; ">
+            <div style="background-color: #455b76; height: 80%; width: 100%; float: left;">
+            <img src="image/41.avif" style="height: 100%; width: 55%; border-radius: 50% 0 0 50%;margin-left: 45%;"></div>
+            <h1 id="v1" > Get In Touch </h1>
+            <p id="v2" > We're friendly and available to chat. Reach out to us anytime  </p>
+            <p id="v3" >  and we'll happily answer your questions. </p>
+        </div>    
+        <div class="container">
+        <h2 class="display-1" style="text-align: center; font-size: 50px; top: 0%; font-weight: bold;">Get in touch</h2>
+        <p style="text-align: center; font-size: 20px; margin-top: 0%; ">Let's talk about your project</p>
+        </div>
+        
+            <form >
+            
+                
+                <table border="6"  width="50%" cellspacing="5" cellpadding="10" align="Center" rules="all">
+                <tr align="left">
+                <th>Your Name</th>
+                <td><input type="text" placeholder="Enter Your Name" /> </td>
+                    </tr>
+                    <tr align="left">
+                        <th>Contact Number</th>
+                        <td><input type="text" placeholder="Enter Your Phone No." /> </td>
+                            </tr>
+                    <tr align="left">
+                    <th>Email Id</th>
+                    <td><input type="email" placeholder="Enter Your Email id" /> </td>
+                    </tr>
+                    <tr align="left">
+                        <th>Your Message</th>
+                        <td><textarea rows="8" cols="15" placeholder="Enter Your Message"></textarea> </td>
+                        </tr>
+                    
+                        </table>
+                        
+                        </form>
+                        <div align="center">
+                        <button type="button" style="background-color: blue; color: white; height: 50px; width: 150px; font-size: 20px;">Submit</button>
+                        <button type="button" style="background-color: red; color: white; height: 50px; width: 150px; font-size: 20px;">Reset</button>
+                        </div>
+                        <br>
+                        <br>
+                        <br> 
+                            <div  class="container-fluid" >
+                                <div id="d1" >
+                                    <div class="row">
+                                        <div class="col-4" style="float: left;">
+                                            <h1 id="d2" >Contact us</h1>
+                                            <br>
+                                            <ul>
+                                                <li id="d3" >Address:- 22,Sheedharbaug,Nikol,Ahmedabad</li>
+                                                <br>
+                                                <li id="d4" >Email:- jensipatel2020@gmail.com</li>
+                                                <br>
+                                                <li id="d5" >Phone no.:- (+91)9106694960</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4" style="float: left;">
+                                            <br>
+                                            <h4 id="d6" >Types of painting</h4>
+                                            <ul>
+                                                <br>
+                                                <li id="d7" >Acrylic painting</li>
+                                                <li id="d8" >Mandala art</li>
+                                                <li id="d9" >Tavdi art</li>
+                                                <li id="d10" >Abstract painting</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4" style="float: left;">
+                                            <br>
+                                            <h4 id="d11" >Events</h4>
+                                            <ul>
+                                                <br>
+                                                <li id="d12" >Past</li>
+                                                <li id="d13" >Current</li>
+                                                <li id="d14" >Upcoming</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div> 
+    </body>
+</html>
